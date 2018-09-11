@@ -19,7 +19,13 @@ body {
 	font-size: 14px;
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+header #api_status {
+    align: right;
+    margin-right: 30px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    min-width: 40px;
+}
 main {
 	flex-grow: 1;
 	flex-shrink: 0;

@@ -4,11 +4,23 @@
  */
 
 header {
-	background-color: #FFFFFF;
-	background-image: url("../images/logo.png");
-	background-repeat: no-repeat;
-	background-position: 20px 50%;
-	height: 70px;
-	width: 100%;
-	border-bottom: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+}
+header div {
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+}
+header .available {
+    background-color: #ff545f;
 }
