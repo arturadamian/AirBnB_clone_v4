@@ -24,6 +24,14 @@ $.get('http://0.0.0.0:5001/api/v1/status/', (data) => {
     $('#api_status').removeClass('available');
   }
 });
+let userDict = {};
+$.ajax({
+  type: 'GET',
+  url: 'http://0.0.0.0:5001/api/v1/users/',
+  success: (users) => {
+    users.forEach((user) => { userDict[user.id] = user.first_name + ' ' + user.last_name; });
+  }
+});
 $.ajax({
   type: 'POST',
   url: 'http://0.0.0.0:5001/api/v1/places_search/',
@@ -35,7 +43,7 @@ $.ajax({
         '<article>' +
           '<div class="title">' +
             '<h2>' + place.name + '</h2>' +
-            '<div class="price_by_night">' + place.price_by_night + '</div>' +
+            '<div class="price_by_night">' + '$' + place.price_by_night + '</div>' +
           '</div>' +
           '<div class="information">' +
             '<div class="max_guest">' +
@@ -53,6 +61,9 @@ $.ajax({
               '<br />' +
               place.number_bathrooms + (place.number_bathrooms > 1 || place.number_bathrooms === 0 ? ' Bathrooms' : ' Bathroom') +
             '</div>' +
+          '</div>' +
+          '<div class="user">' +
+            '<strong>Owner: ' + userDict[place.user_id] + '</strong>' +
           '</div>' +
           '<div class="description">' +
             place.description +
