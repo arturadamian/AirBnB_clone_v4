@@ -10,7 +10,11 @@ window.onload = function () {
     } else {
       listAmenity.splice(listAmenity.indexOf(this.dataset.name), 1);
     }
-    $('.amenities h4').text(listAmenity.join(', '));
+    if (!listAmenity.length) {
+      $('.amenities h4').html('&nbsp;');
+    } else {
+      $('.amenities h4').text(listAmenity.join(', '));
+    }
   });
 };
 $.get('http://0.0.0.0:5001/api/v1/status/', (data) => {
