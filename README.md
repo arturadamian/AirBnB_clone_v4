@@ -218,7 +218,10 @@ github repo
 * Carrie Ybay, [hicarrie](https://github.com/hicarrie) | [@hicarrie_](https://twitter.com/hicarrie_)
 * Jared Heck, [jarehec](https://github.com/jarehec) | [@jarehec](https://twitter.com/jarehec)
 * Arik Rosental, [aDENTinTIME](https://github.com/aDENTinTIME) | [@aDENTinTIME] (https://twitter.com/aDENTinTIME)
-* Artur Adamian, [arturadamian] (https://github.com/arturadamian) | [arturadamian] (https://twitter.com/arturadamian)
+* Artur Adamian | [GitHub](https://github.com/arturadamian) | [Twitter](https://twitter.com/arturadamian) | [LinkedIn](https://www.linkedin.com/in/arturadamian/)
+
+Hi, I am Artur. I am a Software Engineer student at Holberton School where I currently study Web Development and polish my knowleges in low-level and object-       oriented programming, as well as developing strong professional communication skills.
+
 ## License
 
 MIT License
